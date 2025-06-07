@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ketua IRMANUFA dari Masa ke Masa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .hero {
+        position: relative;
+        background: url("fotbar.jpg") center/cover no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .cta-button {
+        margin-top: 1.5rem;
+        display: inline-block;
+        background: #00b894;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background: #019875;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem 0;
+        color: #00b894;
+      }
+
+      .timeline-section {
+        padding: 2rem;
+        background: white;
+      }
+
+      .timeline {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .timeline-item {
+        background: #f1f1f1;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-left: 5px solid #00b894;
+        border-radius: 4px;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .timeline-item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .timeline-item.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .about {
+        padding: 2rem;
+        background: #fdfdfd;
+        text-align: center;
+      }
+
+      footer {
+        padding: 1rem;
+        background: #222;
+        color: white;
+        text-align: center;
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s forwards;
+      }
+
+      .fade-in.delay-1 {
+        animation-delay: 0.5s;
+      }
+
+      .fade-in.delay-2 {
+        animation-delay: 1s;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1 class="fade-in">Ketua IRMANUFA</h1>
+        <p class="fade-in delay-1">Dari Masa ke Masa</p>
+        <a href="#timeline" class="cta-button fade-in delay-2"
+          >Lihat Daftar Ketua</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section id="timeline" class="timeline-section">
+        <h2 class="section-title">KETUA IRMANUFA DARI MASA KE MASA</h2>
+        <div class="timeline">
+          <div class="timeline-item fade-up">
+            <img src="img/kaherul_fatihin.png" alt="khaerul fatihin" />
+            <div class="timeline-content">
+              <h3>2018</h3>
+              <p>Khaerul Fatihin - Ketua pertama IRMANUFA.</p>
+            </div>
+          </div>
+          <div class="timeline-item fade-up">
+            <img src="img/indra_lesmana.png" alt="Indra lesmana" />
+            <div class="timeline-content">
+              <h3>2018-2020</h3>
+              <p>
+                Indra lesmana., S.Pd - Aktif mengembangkan kegiatan remaja dan
+                pendidikan keislaman serta hubungan masyarakat melalui kegiatan
+                unggulan yang diciptakan beliau
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item fade-up">
+            <img src="img/arif_hidayat.png" alt="Muhammad Arif Hidayat" />
+            <div class="timeline-content">
+              <h3>2021-2023</h3>
+              <p>
+                Muhammad Arif Hidayat - Mendorong dakwah kreatif keakraban antar
+                anggota
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item fade-up">
+            <img src="img/agung_ubaidillah.png" alt="agung_ubaidillah" />
+            <div class="timeline-content">
+              <h3>2024-2026</h3>
+              <p>
+                Agung Ubaidillah - Ketua sekarang yang fokus pada digitalisasi
+                program dakwah dan kegiatan sosial modern.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-up">
+            <img src="img/?????" alt="COOMING SOON " />
+            <div class="timeline-content">
+              <h3>2027-2029</h3>
+              <p>
+                Nantikan pemilihan Ketua Irmanufa di bulan ramadhan tahun depan
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <h2 class="section-title">Tentang IRMANUFA</h2>
+        <p class="fade-in">
+          IRMAnUFA adalah organisasi remaja Masjid Jami Nurul Falah Desa
+          Ujungjaya, yang menjadi wadah kreativitas, dakwah, dan kegiatan sosial
+          para pemuda.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 IRMANUFA Ujungjaya. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const items = document.querySelectorAll(".timeline-item");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+      items.forEach((item) => observer.observe(item));
+    </script>
+  </body>
+</html>
